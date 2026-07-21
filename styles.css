@@ -1,12 +1,12 @@
 :root {
-  --bg: #faf9f7;
-  --surface: #fffdfa;
-  --primary: #34548a;
-  --primary-dark: #27446f;
-  --text: #243042;
-  --muted: #6d7584;
-  --accent: #e9daca;
-  --border: #ece7e1;
+  --bg: #f4efe9;
+  --surface: #ffffff;
+  --primary: #3f6b41;
+  --primary-dark: #26492f;
+  --text: #1f2833;
+  --muted: #6b7a8d;
+  --accent: #8b5a34;
+  --border: #d8c4af;
   --shadow: 0 24px 60px rgba(41, 60, 94, 0.12);
 }
 
@@ -192,13 +192,13 @@ a {
 .btn-primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 16px 30px rgba(52, 84, 138, 0.18);
+  box-shadow: 0 16px 30px rgba(38, 73, 47, 0.18);
 }
 
 .btn-secondary {
   background: #fff;
-  border: 1px solid var(--border);
-  color: var(--text);
+  border: 1px solid rgba(139, 90, 52, 0.18);
+  color: var(--primary-dark);
 }
 
 .hero-highlights {
@@ -329,9 +329,13 @@ a {
   justify-content: center;
   border-radius: 50%;
   background: var(--accent);
-  color: var(--primary);
+  color: #fff;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.timeline-card h3 {
+  color: var(--accent);
 }
 
 .about-grid {
@@ -393,20 +397,38 @@ a {
 .cta {
   padding: 2.5rem;
   border-radius: 2rem;
-  background: linear-gradient(135deg, rgba(52, 84, 138, 0.95), rgba(39, 68, 111, 0.95));
+  background: #f1e8dc;
   text-align: center;
-  color: #fff;
-  box-shadow: var(--shadow);
+  color: var(--text);
+  box-shadow: 0 18px 40px rgba(26, 41, 63, 0.08);
+  border: 1px solid rgba(139, 90, 52, 0.14);
 }
 
 .cta .eyebrow {
-  background: rgba(255, 255, 255, 0.16);
-  color: #fff;
+  background: rgba(139, 90, 52, 0.08);
+  color: var(--accent);
+}
+
+.cta h2 {
+  color: var(--primary-dark);
+  text-align: center;
 }
 
 .cta p {
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--muted);
   margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+.cta .btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cta .btn-secondary {
+  background: transparent;
+  border-color: rgba(139, 90, 52, 0.22);
+  color: var(--primary-dark);
 }
 
 .site-footer {
