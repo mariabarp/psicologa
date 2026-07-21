@@ -82,11 +82,54 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
-  align-items: center;
-  padding: 5rem 0 4rem;
+  min-height: 100vh;
+  display: block;
+  position: relative;
+  background-image: url("assets/foto cortada.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* soft white overlay on the left so text is readable while image stays full-bleed */
+  background: linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.78) 36%, rgba(255,255,255,0.12) 56%, rgba(255,255,255,0.0) 100%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+/* position the container slightly to the left so the text sits over the empty wall area */
+.hero-inner.container {
+  margin-left: clamp(1rem, 6vw, 8rem);
+  margin-right: 0;
+}
+
+.hero-copy {
+  max-width: 620px;
+  padding: 2rem 2.4rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  color: var(--text);
+}
+
+.hero-copy h1 {
+  color: var(--text);
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+}
+
+.hero-copy .eyebrow {
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
 }
 
 .eyebrow {
@@ -403,6 +446,28 @@ a {
 
   .hero-card img {
     height: 420px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    background-position: center center;
+    min-height: auto;
+    padding: 2.5rem 0;
+  }
+
+  .hero-copy {
+    margin: 0 1rem 1.25rem;
+    padding: 0 1rem;
+    background: rgba(255,255,255,0.9);
+    border-radius: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 280px;
+    background-position: center center;
   }
 }
 
