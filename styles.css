@@ -225,6 +225,12 @@ a {
   border: 1px solid rgba(183, 124, 82, 0.18);
 }
 
+
+.loading-text,
+.blog-error {
+  color: #7a4b28;
+}
+
 .hero-card {
   position: relative;
   padding: 1rem;
