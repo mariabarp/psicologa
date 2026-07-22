@@ -334,9 +334,12 @@ a {
 
 .btn-icon {
   display: inline-flex;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: auto;
+  height: 1em;
+  max-height: 1.25em;
   margin-right: 0.75rem;
+  vertical-align: middle;
+  object-fit: contain;
 }
 
 .steps-list {
