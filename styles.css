@@ -455,6 +455,19 @@ a {
   color: var(--accent);
 }
 
+#sobre .about-copy .eyebrow {
+  background: #f3e2cf;
+  color: #7a4b28;
+}
+
+#sobre .about-copy h2 {
+  color: #5b3a21;
+}
+
+#sobre .about-copy p {
+  color: #7a4b28;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
