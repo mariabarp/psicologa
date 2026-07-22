@@ -320,6 +320,21 @@ a {
   line-height: 1.5;
 }
 
+.therapy-steps-actions {
+  margin-top: 2rem;
+}
+
+.therapy-steps-actions .btn {
+  padding: 1rem 1.6rem;
+}
+
+.btn-icon {
+  display: inline-flex;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.75rem;
+}
+
 .steps-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
