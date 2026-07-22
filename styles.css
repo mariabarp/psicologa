@@ -152,6 +152,11 @@ a {
   margin-bottom: 1rem;
 }
 
+.eyebrow.eyebrow-brown {
+  background: #f3e2cf;
+  color: #7a4b28;
+}
+
 .hero h1,
 .section-heading h2,
 .about-copy h2,
@@ -285,6 +290,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.section-heading h2.section-title-brown {
+  color: #5b3a21;
+}
+
 .section-heading h2,
 .about-copy h2,
 .cta h2 {
@@ -314,10 +323,13 @@ a {
 .info-card h3,
 .timeline-card h3 {
   margin-bottom: 0.4rem;
-  color: var(--primary);
+  color: #5b3a21;
 }
 
-.info-card p,
+.info-card p {
+  color: #7a4b28;
+}
+
 .timeline-card p,
 .about-copy p,
 .faq-answer p,
