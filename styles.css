@@ -307,6 +307,73 @@ a {
   gap: 1rem;
 }
 
+.therapy-steps {
+  margin-top: 2.5rem;
+}
+
+.therapy-steps h3 {
+  font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  margin: 1rem 0 1.5rem;
+  color: #5b3a21;
+  max-width: 680px;
+}
+
+.steps-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.step-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2.2rem 1.3rem 1.3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  box-shadow: 0 14px 35px rgba(24, 37, 58, 0.06);
+}
+
+.step-card:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.step-number {
+  position: absolute;
+  top: -1.4rem;
+  left: 1.3rem;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-card h4 {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+  color: #5b3a21;
+}
+
+.step-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .info-card,
 .timeline-card,
 .faq-item {
@@ -488,12 +555,17 @@ a {
   }
 
   .cards-grid,
-  .timeline-grid {
+  .timeline-grid,
+  .steps-list {
     grid-template-columns: 1fr;
   }
 
   .hero-card img {
     height: 420px;
+  }
+
+  .step-card:not(:last-child)::after {
+    display: none;
   }
 }
 
