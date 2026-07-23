@@ -568,7 +568,7 @@ a {
     background-image: none;
     background-color: #fcfbf8;
     background-position: center top;
-    padding-top: 1rem;
+    padding-top: 0;
     padding-bottom: 2rem;
   }
 
@@ -578,7 +578,7 @@ a {
 
   .hero-image-mobile {
     display: block;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .hero-image-mobile img {
@@ -607,6 +607,11 @@ a {
 
   .hero-actions .btn {
     width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
   }
 
   .hero-highlights {
@@ -982,8 +987,13 @@ a {
 }
 
 .whatsapp-float img {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.whatsapp-float {
+  width: 4.4rem;
+  height: 4.4rem;
 }
 
 .footer-content {
