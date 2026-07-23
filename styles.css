@@ -546,10 +546,32 @@ a {
   padding: 2.5rem;
   border-radius: 2rem;
   background: #f1e8dc;
-  text-align: center;
   color: var(--text);
   box-shadow: 0 18px 40px rgba(26, 41, 63, 0.08);
   border: 1px solid rgba(139, 90, 52, 0.14);
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cta-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  max-width: 220px;
+}
+
+.cta-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-copy {
+  text-align: left;
 }
 
 .cta .eyebrow {
@@ -559,7 +581,7 @@ a {
 
 .cta h2 {
   color: #5b3a21;
-  text-align: center;
+  text-align: left;
   max-width: none;
   width: 100%;
 }
@@ -567,7 +589,7 @@ a {
 .cta p {
   color: var(--muted);
   margin-bottom: 1.3rem;
-  text-align: center;
+  text-align: left;
 }
 
 .cta .btn-primary {
