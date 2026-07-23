@@ -140,6 +140,18 @@ a {
   pointer-events: none;
 }
 
+.hero-image-mobile {
+  display: none;
+}
+
+.hero-image-mobile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}
+
 .hero-inner {
   position: relative;
   z-index: 2;
@@ -553,9 +565,25 @@ a {
 
   .hero {
     min-height: auto;
+    background-image: none;
+    background-color: #fcfbf8;
     background-position: center top;
     padding-top: 1rem;
     padding-bottom: 2rem;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero-image-mobile {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-image-mobile img {
+    max-height: 45vh;
+    object-fit: cover;
   }
 
   .hero-inner {
