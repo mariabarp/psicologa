@@ -38,5 +38,22 @@ const observeReveals = (elements) => {
 
 observeReveals(reveals);
 
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const primaryNavigation = document.getElementById('primary-navigation');
+
+if (mobileMenuToggle && primaryNavigation) {
+  const srText = mobileMenuToggle.querySelector('.sr-only');
+
+  mobileMenuToggle.addEventListener('click', () => {
+    const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+    mobileMenuToggle.setAttribute('aria-expanded', String(!expanded));
+    primaryNavigation.classList.toggle('open');
+    mobileMenuToggle.classList.toggle('open');
+
+    if (srText) {
+      srText.textContent = expanded ? 'Abrir menu' : 'Fechar menu';
+    }
+  });
+}
 
 document.getElementById('year').textContent = new Date().getFullYear();
