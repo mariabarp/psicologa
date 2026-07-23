@@ -306,6 +306,14 @@ a {
   color: #5b3a21;
 }
 
+#demandas-principais {
+  scroll-margin-top: 5rem;
+}
+
+#terapia-etapas {
+  scroll-margin-top: 5rem;
+}
+
 .section-heading h2,
 .about-copy h2,
 .cta h2 {
